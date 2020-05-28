@@ -1,0 +1,32 @@
+<!--<h2 mat-dialog-title>{{description}}</h2>-->
+
+<form [formGroup]="form">
+
+  <div class="div-add-user">
+  <div style="font-size:20px">Name:</div>
+  <div style="font-size:20px">Phone:</div>
+  </div>
+  <div class = "name-field">
+    <input matInput
+           placeholder="name"
+           formControlName="name">
+  </div>
+  <div class="phone-field">
+    <input matInput
+           placeholder="phone"
+           formControlName="phone">
+  </div>
+  <div class="photo-field">
+    <label for="file"></label>
+    <input type="file"
+           formControlName="file"
+           id="file"
+           (change)="handleFileInput($event)">
+  </div>
+
+</form>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button"(click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>

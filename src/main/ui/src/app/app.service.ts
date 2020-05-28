@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {LoginModel} from "../LoginModel";
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,24 @@ export class AppService {
     return this.http.get(this.rootURL + '/users');
   }
 
-  addUser(user: any, id: number) {
-	user.id = id;
-	return this.http.post(this.rootURL + '/user', user);
+  login(username: string, password: string) {
+	// user.id =
+    let loginModel = new LoginModel();
+    loginModel.username = username;
+    loginModel.password = password;
+    loginModel.logedIn = true;
+	return this.http.post(this.rootURL + '/login', loginModel);
   }
+
+  logout(username: string, password: string) {
+    let loginModel = new LoginModel();
+    loginModel.username = username;
+    loginModel.password = password;
+    return this.http.post(this.rootURL+'/logout',loginModel);
+  }
+
+  // addUser(name: string,phone:string,photo:) {
+  //
+  // }
 
 }

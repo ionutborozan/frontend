@@ -1,0 +1,23 @@
+<section>
+    <table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th *ngFor="let col of tableView">
+            {{col}}
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+<!--    <tr *ngFor="let row of tableView.rows" (click)="doSomething(row)">-->
+        <tr *ngFor="let col of data;">
+            <th>th</th>
+            <td> {{col.name}}</td>
+            <td>{{col.phone}}</td>
+            <td>{{col.lastAcces}}</td>
+            <td>{{col.atemptsADay}}</td>
+        </tr>
+<!--    </tr>-->
+    </tbody>
+    </table>
+</section>

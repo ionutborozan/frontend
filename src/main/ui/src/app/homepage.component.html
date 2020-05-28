@@ -1,0 +1,29 @@
+<section>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Users</a>
+  <a href="#about">About</a>
+  <button (click)="logout(); $event.preventDefault()">Logout</button>
+</div>
+  <div>
+<div class="user-img" routerLinkActive="active">
+  <a (click)="navigateToUserDetails()">
+    <img src="assets/user-logo.jpg">
+  </a>
+</div>
+  <div class="camera-img" routerLinkActive="active">
+    <a (click)="navigateToCamera()">
+      <img src="assets/camera-logooo.jpg">
+    </a>
+  </div>
+    <div class="notification-img" routerLinkActive="active">
+    <a (click)="navigateToNotification()">
+      <img src="assets/notification-logo.webp">
+    </a>
+  </div>
+  </div>
+  <button (click)="addUser(); $event.preventDefault()">AddUser</button>
+  <button (click)="changeInPassword(); $event.preventDefault()">AddUser</button>
+
+</section>
+

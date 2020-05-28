@@ -1,0 +1,22 @@
+<section>
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 mrgnbtm">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" formControlName="firstName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleInputPassword1">Pasword</label>
+            <input type="text" class="form-control" formControlName="lastName" id="exampleInputPassword1" placeholder="Password">
+          </div>
+        </div>
+        <button type="submit" [disabled]="!userForm.valid" class="btn btn-danger">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
