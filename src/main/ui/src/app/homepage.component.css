@@ -34,7 +34,7 @@
 }
 
 .user-img {
-    position: fixed;
+    position: relative;
     width: 400px;
 }
 
@@ -42,4 +42,12 @@
     position: relative;
     width: 400px;
     left: 300px;
+}
+.btn {
+    border: none;
+    background:none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    height: 52px;
 }

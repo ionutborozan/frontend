@@ -1,3 +1,17 @@
-<p>
-    camera-page works!
-</p>
+<form [formGroup]="form">
+
+    <div class="div-add-user">
+        <div style="font-size:20px">New Password:</div>
+    </div>
+    <div class = "name-field">
+        <input matInput
+               placeholder="password"
+               formControlName="password">
+    </div>
+
+</form>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>

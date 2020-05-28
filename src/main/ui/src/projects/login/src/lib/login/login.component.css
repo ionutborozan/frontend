@@ -1,3 +1,27 @@
 .mrgnbtm {
     margin-top: 20px;
 }
+.position {
+    position: relative;
+    top:100px;
+    left:40px;
+}
+.password-pos {
+    position: relative;
+    top:80px;
+}
+.username-pos {
+    position: relative;
+    left: 330px;
+}
+.login-button {
+    position: relative;
+    top: 100px;
+    left:440px;
+}
+.img-login {
+    position: relative;
+    top:100px;
+    left:570px;
+}
+

@@ -183,6 +183,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/ui/src/projects/camera-page/src/lib/camera-page.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/ui/src/projects/camera-page/src/lib/camera-page/camera-page.component.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/ui/src/projects/camera-page/src/lib/camera-page/camera-page.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/ui/src/projects/camera-page/src/lib/camera-page/camera-page.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/ui/src/projects/homepage/src/lib/add-user/add-user.component.html">
           <value>
             <set />
@@ -308,12 +328,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../projectSII/src/main/java/com/example/demo/Class.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../projectSII/src/main/java/com/example/demo/DataAccesModel.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../projectSII/src/main/java/com/example/demo/DriverShim.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../projectSII/src/main/java/com/example/demo/HC05.java">
           <value>
             <set />
           </value>

@@ -1,9 +1,11 @@
 <section>
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">Users</a>
-  <a href="#about">About</a>
-  <button (click)="logout(); $event.preventDefault()">Logout</button>
+  <app-header></app-header>
+
+  <div class="topnav">
+    <button class="btn" (click)="doNothing(); $event.preventDefault()">Home</button>
+      <button class="btn" (click)="addUser(); $event.preventDefault()">Add User</button>
+    <button class="btn" (click)="changeInPassword(); $event.preventDefault()">Change password</button>
+    <button (click)="logout(); $event.preventDefault()">Logout</button>
 </div>
   <div>
 <div class="user-img" routerLinkActive="active">
@@ -22,8 +24,7 @@
     </a>
   </div>
   </div>
-  <button (click)="addUser(); $event.preventDefault()">AddUser</button>
-  <button (click)="changeInPassword(); $event.preventDefault()">AddUser</button>
+
 
 </section>
 

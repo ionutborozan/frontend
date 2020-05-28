@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {AppService} from "./app.service";
 import {AddUserComponent} from "../projects/homepage/src/lib/add-user/add-user.component";
 import {MatDialog} from "@angular/material/dialog";
+import {CameraPageComponent} from "../projects/camera-page/src/lib/camera-page/camera-page.component";
 
 
 @Component({
@@ -41,8 +42,12 @@ export class HomepageComponent implements OnInit {
         // this.router.navigate(['/add-user']);
 
     }
-    changeInPassword() {
 
+    doNothing() {
+
+    }
+    changeInPassword() {
+        this.dialog.open(CameraPageComponent);
     }
 
 }

@@ -34,8 +34,10 @@ export class LoginComponent implements OnDestroy {
             this.userCount = this.userCount + 1;
             console.log(this.userCount);
             this.userForm.reset();
+            this.router.navigate(['/homepage'])
+        },error => {
+             alert("User not found");
         });
-        this.router.navigate(['/homepage'])
     }
 
 

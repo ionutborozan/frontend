@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '../projects/notification-page/src/lib/header/header.component';
 import { DisplayBoardComponent } from './display-board.component';
 import { HomepageComponent } from './homepage.component';
 import { environment } from '../environments/environment';
@@ -17,6 +17,7 @@ import {AddUserComponent} from "../projects/homepage/src/lib/add-user/add-user.c
 import {HomepageModule} from "../projects/homepage/src/lib/homepage.module";
 import {MatTableModule} from "@angular/material/table";
 import {NotificationPageModule} from "../projects/notification-page/src/lib/notification-page.module";
+import {CameraPageModule} from "../projects/camera-page/src/lib/camera-page.module";
 
 
 // state related imports
@@ -29,7 +30,6 @@ import {NotificationPageModule} from "../projects/notification-page/src/lib/noti
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     DisplayBoardComponent,
     HomepageComponent
   ],
@@ -44,7 +44,8 @@ import {NotificationPageModule} from "../projects/notification-page/src/lib/noti
     MatDialogModule,
     MatFormFieldModule,
       HomepageModule,
-      NotificationPageModule
+      NotificationPageModule,
+      CameraPageModule
 
     /**
      * StoreModule.forRoot is imported once in the root module, accepting a reducer
@@ -82,7 +83,7 @@ import {NotificationPageModule} from "../projects/notification-page/src/lib/noti
   ],
   providers: [],
   exports: [
-    HeaderComponent
+
   ],
   bootstrap: [AppComponent]
 })
