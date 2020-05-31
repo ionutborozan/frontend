@@ -44,8 +44,8 @@ export class AddUserComponent implements OnInit {
   }
 
   save() {
-    // this.appService.addUser(this.form.value.name,this.form.value.phone,this.form.value.photo);
-    // this.dialogRef.close();
+    // this.appService.addUser(this.form.value.name,this.form.value.phone;
+    this.dialogRef.close();
   }
 
 }

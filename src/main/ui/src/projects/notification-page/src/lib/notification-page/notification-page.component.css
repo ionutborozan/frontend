@@ -22,3 +22,22 @@
     background-color: blueviolet;
     color: white;
 }
+.div-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    top:152px;
+    position: relative;
+}
+.text-div {
+    position: relative;
+    left: 650px;
+}
+
+.button-class {
+    position: relative;
+    top: 200px;
+    left:700px;
+}

@@ -29,8 +29,8 @@
 .notification-img {
     width: 400px;
     position: relative;
-    /*top: 400px;*/
-    /*left: 100px;*/
+    left: 1100px;
+    bottom: 500px;
 }
 
 .user-img {
@@ -41,7 +41,8 @@
 .camera-img {
     position: relative;
     width: 400px;
-    left: 300px;
+    left: 400px;
+    bottom: 220px;
 }
 .btn {
     border: none;

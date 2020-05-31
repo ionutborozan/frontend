@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {LoginModel} from "../LoginModel";
 import {JsonPrimitive} from "@angular/compiler-cli/ngcc/src/packages/entry_point";
+import {UserModel} from "../projects/notification-page/src/lib/notification-page/UserModel";
 
 @Injectable({
   providedIn: 'root'
@@ -32,8 +33,6 @@ export class AppService {
     return this.http.post(this.rootURL+'/logout',loginModel);
   }
 
-  // addUser(name: string,phone:string,photo:) {
-  //
-  // }
+
 
 }

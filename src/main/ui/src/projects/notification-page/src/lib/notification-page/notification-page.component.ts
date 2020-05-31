@@ -3,6 +3,7 @@ import {DataAccesModel} from "./DataAccesModel";
 import {NotificationPageService} from "../notification-page.service";
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'lib-notification-page',
@@ -12,7 +13,8 @@ import {HttpClient} from "@angular/common/http";
 export class NotificationPageComponent implements OnInit {
     data: DataAccesModel[] = [];
     tableView:string[] = ['name','phone','lastAcces','accesAday'];
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient,
+                private router:Router) {
     }
 
     ngOnInit() {
@@ -24,6 +26,10 @@ export class NotificationPageComponent implements OnInit {
                     alert("An alert occured");
                 }
             );
+    }
+
+    goBack() {
+        this.router.navigate(['/homepage']);
     }
 
 
