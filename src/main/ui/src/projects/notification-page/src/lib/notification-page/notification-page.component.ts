@@ -12,7 +12,7 @@ import {Router} from "@angular/router";
 })
 export class NotificationPageComponent implements OnInit {
     data: DataAccesModel[] = [];
-    tableView:string[] = ['name','phone','lastAcces','accesAday'];
+    tableView:string[] = ['name','phone','lastAcces','accesPerday'];
     constructor(private http: HttpClient,
                 private router:Router) {
     }
