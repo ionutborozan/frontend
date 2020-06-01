@@ -29,15 +29,12 @@ export class LoginComponent implements OnDestroy {
     destroy$: Subject<boolean> = new Subject<boolean>();
 
     onSubmit() {
-        this.appService.login(this.userForm.value.firstName, this.userForm.value.firstName).subscribe(data => {
-            console.log('message::::', data);
+        this.appService.login(this.userForm.value.firstName, this.userForm.value.firstName);
             this.userCount = this.userCount + 1;
             console.log(this.userCount);
             this.userForm.reset();
             this.router.navigate(['/homepage'])
-        },error => {
-             alert("User not found");
-        });
+
     }
 
 
